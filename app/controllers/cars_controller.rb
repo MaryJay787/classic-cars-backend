@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
     def index
         cars = Car.all
-        json_responce(cars)
+        render json: cars 
     end
 
     def create
@@ -16,7 +16,7 @@ class CarsController < ApplicationController
 
     def show
         car = Car.find(car_params[:id])
-        json_responce(car)
+        render json: car
     end
 
     # def edit 
@@ -36,7 +36,7 @@ class CarsController < ApplicationController
     def delete
         car = Car.find(car_params[:id])
         car.destroy
-        json_responce(car)
+        render json: car
     end
 
     private
@@ -53,7 +53,7 @@ class CarsController < ApplicationController
         )
     end
 
-    def json_response(object, status = :ok)
-        render json: object, status: status
-    end
+    # def json_response(object, status = :ok)
+    #     render json: object, status: status
+    # end
 end

@@ -17,12 +17,12 @@ body_type:'Coupe', drive:'4 SPEED MANUAL',
 color: 'TUXEDO BLACK'  , interior_color: 'BLACK', 
 interior: ' Black leather interior', user_id: user1.id)
 
-car2 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6666/415294/790x1024/1969-chevrolet-camaro', 
-    year:'1969', make:'Chevrolet', model: 'Camaro', 
-    engine: '632 V8', trans: 'Tremec TKO 5-speed manual transmission',  
-    body_type:'', drive:'', 
-    color: ''  , interior_color: '', 
-    interior: '', user_id: user1.id)
+# car2 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6666/415294/790x1024/1969-chevrolet-camaro', 
+#     year:'1969', make:'Chevrolet', model: 'Camaro', 
+#     engine: '632 V8', trans: 'Tremec TKO 5-speed manual transmission',  
+#     body_type:'', drive:'', 
+#     color: ''  , interior_color: '', 
+#     interior: '', user_id: user1.id)
 
     
   

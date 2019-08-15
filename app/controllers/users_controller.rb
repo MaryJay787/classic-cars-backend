@@ -1,53 +1,53 @@
 class UsersController < ApplicationController
     def index
         users = User.all
-        json_responce(users)
+        render json: users
     end
-    
-    def create
-        user = User.new(user_params)
+
+    # def create
+    #     user = User.new(user_params)
         
-        if user.save
-            json_responce(user, :created)
-        else
-            json_responce('error')
-        end
+    #     if user.save
+    #         render json: user :created
+    #     else
+    #         render json: user
+    #     end
 
-    end
+    # end
 
-    def show
-        user = User.find(user_params[:id])
-        json_responce(user)
-    end
+    # def show
+    #     user = User.find(user_params[:id])
+    #     render json: user
+    # end
 
-    def edit 
-        user = User.find(user_params[:id])
-    end
+    # def edit 
+    #     user = User.find(user_params[:id])
+    # end
 
-    def update
-        user = User.find(user_params[:id])
+    # def update
+    #     user = User.find(user_params[:id])
 
-        if user.update(user_params)
-         json_responce(user)
-        else
-          json_responce(user)
-        end
-    end
+    #     if user.update(user_params)
+    #         render json: user
+    #     else
+    #         render json: user
+    #     end
+    # end
 
-    def delete
-        user = User.find(user_params[:id])
-        user.destroy
-        json_responce(user)
-    end
+    # def delete
+    #     user = User.find(user_params[:id])
+    #     user.destroy
+    #     render json: user
+    # end
 
-    private
+    # private
 
-    def user_params
-        params.require(:user).permit(:username, :password, :image)
-    end
+    # def user_params
+    #     params.require(:user).permit(:username, :password, :image)
+    # end
 
-    def json_response(object, status = :ok)
-        render json: object, status: status
-    end
+    # def json_response(object, status = :ok)
+    #     render json: object, status: status
+    # end
 
 end

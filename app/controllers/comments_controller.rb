@@ -2,12 +2,12 @@ class CommentsController < ApplicationController
 
     def index
         comments = Comment.all
-        json_response(comments)
+        render json: comments
     end
 
     def create
         comment = Comment.create!(comment_params)
-        json_response(comment)
+        render json: comment
     end
 
     def delete
@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
         params.require(:comment).permit(:content, :car_id)
     end
 
-    def json_response(object, status = :ok)
-        render json: object, status: status
-    end
+    # def json_response(object, status = :ok)
+    #     render json: object, status: status
+    # end
 end
