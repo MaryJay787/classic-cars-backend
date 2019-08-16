@@ -4,16 +4,17 @@ class UsersController < ApplicationController
         render json: users
     end
 
-    # def create
-    #     user = User.new(user_params)
-        
-    #     if user.save
-    #         render json: user :created
-    #     else
-    #         render json: user
-    #     end
+    def create
+        user = User.new(user_params)
+        if user.save
+            render json: { message: 'User Created Successfully'},
+            status: :created
+        else
+            render json: { errors: user.errors.full_messages},
+            status: :bad_request
+        end
 
-    # end
+    end
 
     # def show
     #     user = User.find(user_params[:id])
@@ -40,11 +41,11 @@ class UsersController < ApplicationController
     #     render json: user
     # end
 
-    # private
+    private
 
-    # def user_params
-    #     params.require(:user).permit(:username, :password, :image)
-    # end
+    def user_params
+        params.require(:user).permit(:username, :password, :image)
+    end
 
     # def json_response(object, status = :ok)
     #     render json: object, status: status
