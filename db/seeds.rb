@@ -67,7 +67,7 @@ car8 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/4687/399072/790
         color: 'LYNNDALE BLUE ' , interior_color: 'Correct Dark Blue', 
         interior: 'Leather interior ', user_id: user3.id)
 
-car9=  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6921/434891/790x1024/1987-buick-regal-gnx', 
+car9 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6921/434891/790x1024/1987-buick-regal-gnx', 
         year:'1987', make:'Buick', model: 'Regal GNX', 
         engine: '3.8L V6 TURBO', trans: 'AUTOMATIC',  
         body_type:' ', drive:'4 SPEED  ', 
@@ -80,6 +80,53 @@ car10 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6936/442497/79
         body_type:'Truck ', drive:'3 Speed ', 
         color: 'MARINER BLUE ' , interior_color: 'GRAY', 
         interior: 'Vinyl interior', user_id: user3.id)
+
+
+car11 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6840/431190/790x1024/1966-chevrolet-el-camino', 
+        year:'1966', make:'Chevrolet', model: 'El Camino', 
+        engine: '396 V8 ', trans: 'MANUAL ',  
+        body_type:' ', drive:'4 SPEED  ', 
+        color: ' SANDLEWOOD' , interior_color: 'MEDIUM FAWN ', 
+        interior: 'Correct Medium Fawn and Light Fawn interior', user_id: user3.id)
+
+
+car12 = Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/4792/399063/790x1024/1966-chevrolet-corvette-sting-ray', 
+        year:'1966', make:'Chevrolet', model: 'Corvette Sting Ray', 
+        engine: '327 V8 L79 ', trans: 'MANUAL ',  
+        body_type:'Convertible  ', drive:'4 SPEED ', 
+        color: 'MILANO MAROON ' , interior_color: 'BLACK ', 
+        interior: 'Correct Standard interior', user_id: user2.id)
+
+car13 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6969/440191/790x1024/1967-pontiac-gto', 
+        year:'1967', make:'Pontiac', model: 'GTO', 
+        engine: '400 V8 ', trans: 'MANUAL',  
+        body_type:'Timeless Pontiac GTO ', drive:'4 SPEED ', 
+        color: 'FATHOM BLUE ' , interior_color: 'LIGHT BLUE ', 
+        interior: 'Correct Blue bucket seat interior ', user_id: user3.id)
+
+
+car14 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6674/419305/790x1024/1968-mercury-cougar', 
+        year:'1968', make:'Mercury', model: 'Cougar', 
+        engine: '390 V8 ', trans: 'AUTOMATIC ',  
+        body_type:'Classy Coupe ', drive:'3 SPEED ', 
+        color: 'GLACIER BLUE ' , interior_color: 'BLUE ', 
+        interior: 'Mostly-original Deluxe vinyl interior ', user_id: user3.id)
+
+car15 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6933/431577/790x1024/1967-ford-mustang-fast-and-furious', 
+        year:'1967', make:'Ford', model: 'Mustang Fast and Furious', 
+        engine: '347 V8 ', trans: 'MANUAL ',  
+        body_type:'Sport ', drive:'5 SPEED ', 
+        color: 'DARK MOSS GREEN ' , interior_color: 'BLACK ', 
+        interior: 'Customized interior ', user_id: user3.id)
+
+car16 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6750/422599/790x1024/1969-chevrolet-camaro', 
+        year:'1969', make:'Chevrolet', model: 'Camaro', 
+        engine: '396 V8 ', trans: 'MANUAL',  
+        body_type:'Camaro Convertible', drive:'4 SPEED', 
+        color: 'ORANGE ' , interior_color: 'BLACK ', 
+        interior: 'Deluxe Interior ', user_id: user3.id)
+
+
 
 comment1 = Comment.create(content:"I really love this car", car_id: car1.id)
 comment2 = Comment.create(content:"I would love to buy this car", car_id: car2.id)
