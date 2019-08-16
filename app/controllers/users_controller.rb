@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-    def index
-        users = User.all
-        render json: users
-    end
+    # def index
+    #     users = User.all
+    #     render json: users
+    # end
 
     def create
         user = User.new(user_params)
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username, :password, :image)
+        params.permit(:username, :password, :image)
     end
 
     # def json_response(object, status = :ok)
