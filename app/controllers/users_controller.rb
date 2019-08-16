@@ -1,20 +1,23 @@
 class UsersController < ApplicationController
+    skip_before_action :authorized, only: [:create]
+
     # def index
     #     users = User.all
     #     render json: users
     # end
 
-    def create
-        user = User.new(user_params)
-        if user.save
-            render json: { message: 'User Created Successfully'},
-            status: :created
-        else
-            render json: { errors: user.errors.full_messages},
-            status: :bad_request
-        end
-
+ 
+  def create
+    @user = User.create(user_params)
+    if @user.valid?
+      @token = encode_token(user_id: @user.id)
+      render json: { user: @user, jwt: @token }, status: :created
+    else
+      render json: { error: 'failed to create user' }, status: :not_acceptable
     end
+  end
+ 
+  
 
     # def show
     #     user = User.find(user_params[:id])
@@ -42,11 +45,10 @@ class UsersController < ApplicationController
     # end
 
     private
-
-    def user_params
-        params.permit(:username, :password, :image)
-    end
-
+ 
+  def user_params
+    params.permit(:username, :password, :image)
+  end
     # def json_response(object, status = :ok)
     #     render json: object, status: status
     # end
