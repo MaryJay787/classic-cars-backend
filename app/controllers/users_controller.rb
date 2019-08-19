@@ -19,10 +19,10 @@ class UsersController < ApplicationController
  
   
 
-    # def show
-    #     user = User.find(user_params[:id])
-    #     render json: user
-    # end
+    def show
+        user = User.find_or_create_by(user_params[:username])
+        render json: user
+    end
 
     # def edit 
     #     user = User.find(user_params[:id])
@@ -47,6 +47,6 @@ class UsersController < ApplicationController
     private
  
   def user_params
-    params.permit(:username, :password, :image)
+    params.permit(:username, :password)
   end
 end

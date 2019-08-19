@@ -21,57 +21,12 @@ body_type:'Coupe', drive:'4 SPEED',
 color: 'TUXEDO BLACK'  , interior_color: 'BLACK', 
 interior: ' Black leather interior', user_id: user1.id)
 
-<<<<<<< HEAD
-car2 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6828/430618/790x1024/1965-ford-mustang-fastback', 
-year:'1963', make:'Chedrolet', model: 'Cordette', 
-engine: '304 V8', trans: 'Muncie 4-speed manual transmission',  
-body_type:'Codupe', drive:'4 SPfED MANUAL', 
-color: 'TUXEDO BLAfK'  , interior_color: 'BfACK', 
-interior: ' Blacf leathfr interior', user_id: user1.id)
-
-
-car3 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6895/429963/790x1024/1965-superformance-shelby-cobra', 
-year:'1985', make:'Chedrolet', model: 'Corvette', 
-engine: '302 V8', trans: 'Muncie d4-speed manual transmission',  
-body_type:'Coufpe', drive:'4 SPEEr MANUAL', 
-color: 'TUXEDd BLfACK'  , interior_color: 'BfACK', 
-interior: ' Black leather intdrior', user_id: user2.id)
-
-car4 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/4792/399063/790x1024/1966-chevrolet-corvette-sting-ray', 
-year:'1966', make:'Chevrolet', model: 'Corvette', 
-engine: '302 V8', trans: 'Muncie 4-speed manual transmission',  
-body_type:'Coudpe', drive:'4 SPEED MANUAL', 
-color: 'TUXEDsO BLACK'  , interior_color: 'BLACfK', 
-interior: ' Black leather inttrior', user_id: user3.id)
-
-car5 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/4687/399072/790x1024/1967-chevrolet-corvette-sting-ray', 
-year:'1965', make:'Chevrolet', model: 'Corvette', 
-engine: '302 V8', trans: 'Muncie 4-speed manual transmission',  
-body_type:'Coupe', drive:'4 SPEED MANUAL', 
-color: 'TUXEDO BLACK'  , interior_color: 'BLACK', 
-interior: ' Black leather interior', user_id: user3.id)
-
-car6 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/5127/399077/790x1024/1967-plymouth-gtx', 
-year:'1965', make:'Chevrolet', model: 'Corvette', 
-engine: '302 V8', trans: 'Muncie 4-speed manual transmission',  
-body_type:'Coupe', drive:'4 SPEED MANUAL', 
-color: 'TUXEDO BLACK'  , interior_color: 'BLACK', 
-interior: ' Black leather interior', user_id: user1.id)
-
-car7 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6622/426572/790x1024/1968-ford-shelby-mustang-gt350', 
-year:'1965', make:'Chevrolet', model: 'Corvette', 
-engine: '302 V8', trans: 'Muncie 4-speed manual transmission',  
-body_type:'Coupe', drive:'4 SPEED MANUAL', 
-color: 'TUXEDO BLACK'  , interior_color: 'BLACK', 
-interior: ' Black leather interior', user_id: user2.id)
-=======
 car2 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6666/415294/790x1024/1969-chevrolet-camaro', 
     year:'1969', make:'Chevrolet', model: 'Camaro', 
     engine: '632 V8', trans: 'Manual',  
     body_type:'', drive:'5 SPEED ', 
     color: 'HUGGER ORANGE / Pearl White Rally Stripes' , interior_color: 'BLACK', 
     interior: 'Customized leather interior', user_id: user1.id)
->>>>>>> 7627c433bb47ef6fb70f1ad166c3c659014eb515
 
     
 car3 =  Car.create(image:'https://cdn.dealeraccelerate.com/rkm/1/6952/441963/790x1024/1955-ford-thunderbird', 
