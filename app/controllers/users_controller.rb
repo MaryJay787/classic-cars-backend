@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   
 
     def show
-        user = User.find_or_create_by(user_params[:username])
+        user = User.find(user_params[:username])
         render json: user
     end
 
@@ -47,6 +47,6 @@ class UsersController < ApplicationController
     private
  
   def user_params
-    params.permit(:username, :password)
+    params.require(:user).permit(:username, :password)
   end
 end
