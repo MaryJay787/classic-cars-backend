@@ -24,6 +24,7 @@ class ApplicationController < ActionController::API
         nil
       end
     end
+  end
 
     def current_user
       if decoded_token
@@ -41,5 +42,4 @@ class ApplicationController < ActionController::API
     def authorized
       render json: { message: 'Please log in' }, status: :unauthorized unless logged_in?
      end
-    end
 end
